@@ -38,9 +38,9 @@ void Innitialize()
 void CleanUp()
 {
 	//(??? free your memory)
-	cudaFree( A_CPU );
-	cudaFree( B_CPU );
-	cudaFree( C_CPU );
+	free( A_CPU );
+	free(B_CPU);
+	free(C_CPU);
 
 }
 
