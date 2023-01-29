@@ -39,8 +39,8 @@ void CleanUp()
 {
 	//(??? free your memory)
 	free( A_CPU );
-	free(B_CPU);
-	free(C_CPU);
+	free( B_CPU );
+	free( C_CPU );
 
 }
 
