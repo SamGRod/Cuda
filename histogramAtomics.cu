@@ -164,10 +164,6 @@ __global__ void fillHistogramGPU(float *randomNumbers, int *hist)
 				atomicAdd(&temp[k], 1);
 				done = 1;
 			}
-			if(NUMBER_OF_BINS < k)
-			{
-				printf("\n k is too big (on CPU) k = %d\n", k);
-			}
 			k++;
 			breakPoint += stepSize;
 		}
